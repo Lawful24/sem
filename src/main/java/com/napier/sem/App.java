@@ -11,7 +11,7 @@ public class App {
         // Connect to database
         a.connect();
 
-        // Extract employee salary information
+        // Extract employee salary information based on department
         Department d = a.getDepartment("Sales");
         ArrayList<Employee> employees = a.getSalariesByDepartment(d);
 
@@ -215,7 +215,7 @@ public class App {
                             + "WHERE dept_name = '" + dept_name + "'";
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
-            // Return new employee if valid.
+            // Return new department if valid.
             // Check one is returned
             if (rset.next()) {
                 Department dept = new Department();
