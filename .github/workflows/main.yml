@@ -3,7 +3,9 @@ on:
   push:
     branches:
       - master
-      - lab08
+      - release
+      - develop
+      - feature/
 jobs:
   UnitTests:
     name: Unit Tests
