@@ -62,6 +62,7 @@ public class AppTest {
         emp.last_name = "Chalmers";
         emp.title = "Engineer";
         emp.salary = 55000;
+        emp.dept = new Department();
         app.displayEmployee(emp);
     }
 }
