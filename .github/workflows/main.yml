@@ -3,9 +3,6 @@ on:
   push:
     branches:
       - master
-      - release
-      - develop
-      - feature/*
 jobs:
   UnitTests:
     name: Unit Tests
